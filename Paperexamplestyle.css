@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  color: #404033;
+}
+header {
+  text-align: center;
+}
+body {
+  margin: 0;
+  background-color: rgba(255, 255, 204, 0.3);
+}
+.topnav {
+  overflow: hidden;
+  background-color: #404033;
+}
+.topnav a {
+  text-decoration: none;
+  float: left;
+  display: block;
+  color: #FFF2BF;
+  padding: 15px 20px;
+}
+.topnav a:hover {
+  background-color: #FFF2BF;
+  color: #404033;
+  cursor: default;
+}
+.column {
+  float: left;
+  padding: 20px;
+}
+.column.side {
+  width: 25%;
+}
+.column.middle {
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.fas.fa-fw.fa-home, .fas.fa-newspaper, .fas.fa-paper-plane {
+  color:#FFF2BF;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+#home:hover .fas.fa-fw.fa-home, #uptodate:hover .fas.fa-newspaper, #contact:hover .fas.fa-paper-plane {
+  color: #404033;
+}
